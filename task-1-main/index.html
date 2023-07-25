@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>News Website</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+</head>
+<body>
+    <h2 class="heading">Taaza Khabar</h2>
+    <h1>Welcome to the News Website</h1>
+    <div class="categories">
+        <h2>Categories:</h2>
+        <button onclick="openCategory('sports')">Sports</button>
+        <button onclick="openCategory('economy')">Economy</button>
+        <button onclick="openCategory('business')">Business</button>
+        <button onclick="openCategory('health')">Health</button>
+        <button onclick="openCategory('environment')">Environment</button>
+        <button onclick="openCategory('politics')">Politics</button>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function openCategory(category) {
+            window.location.href = "category.html?category=" + category;
+        }
+    </script>
+
+    <div class="footer" onclick="openLink()">
+        <h2>Made by <u>Aryan Sadhu</u></h2>
+    </div>
+
+    <script>
+        function openLink() {
+            window.open("https://aryan-sadhu.netlify.app/", "_blank"); 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey Form</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script>
+    function submitForm() {
+      window.open("success.html", "_blank");
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+        <h1>Aryan's Survey Form</h1>
+    </div>
+    
+    <form action="submit.php" method="post" onsubmit="submitForm();">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="name">Roll number:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="name">Branch:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="name">Course:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="name">Semester:</label>
+      <input type="text" id="name" name="name" required>
+
+      <p>Are you placed?</p>
+      <input type="radio" id="yes" value="Yes" >
+      <label for="Yes">Yes</label>
+      <input type="radio" id="No" value="No" >
+      <label for="No">No</label>
+      
+
+      
+      <p>Prepared for placements?</p>
+      <input type="radio" id="yes" value="Yes" >
+      <label for="Yes">Yes</label>
+      <input type="radio" id="No" value="No" >
+      <label for="No">No</label>
+
+      <label for="name">Skills:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="name">Interest's:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="name">Domain you want to work in?</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="name">Salary expectations(ctc)</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="name">Have you done Internship?</label>
+      <input type="text" id="name" name="name" required>
+
+      
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
